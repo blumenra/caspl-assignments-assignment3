@@ -1,0 +1,5 @@
+
+define a global matrix
+define a global variable named "WorldWidth" to hold the width of the matrix
+define a global variable named "WorldLength" to hold the length of the matrix
+create the SCHEDULER co-routine in a different file!
