@@ -1,5 +1,23 @@
 
 define a global matrix
 define a global variable named "WorldWidth" to hold the width of the matrix
+	initialize it based on the first command-line argument BEFORE calling the schedular to start iterations
 define a global variable named "WorldLength" to hold the length of the matrix
 create the SCHEDULER co-routine in a different file!
+define a label "resume"
+	do the control transfer with the resume mechanism
+	use register !EBX! to transfer control
+
+push the relevant argument to the scheduler stack during the initialization phase
+??push the cell co-routine cell number during the initialization phase
+
+implement a simple scheduler which will iterate t times through the cells in a OUND-ROBIN manner
+transfer the control from the scheduler to the printer every k "resumes" of cell co-routines
+
+make sure the name convetion is kept according to the assignment page (the code will be tested with different schdular)
+
+
+DO NOT use c standard library. use system calls instead!
+
+implement the function Cell(x,y) in c language
+
