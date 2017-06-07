@@ -9,6 +9,7 @@ define a label "resume"
 	use register !EBX! to transfer control
 
 push the relevant argument to the scheduler stack during the initialization phase
+push the relevant argument (i and j) to the cell stack
 ??push the cell co-routine cell number during the initialization phase
 
 implement a simple scheduler which will iterate t times through the cells in a OUND-ROBIN manner
@@ -19,5 +20,8 @@ make sure the name convetion is kept according to the assignment page (the code 
 
 DO NOT use c standard library. use system calls instead!
 
-implement the function Cell(x,y) in c language
+implement the function Cell(x,y) in c language, which gets the cell's indices and inserts them into the stack, together with cell's initial state
 
+to allocate memory for the matrix during runtime use a system call for it
+
+compile the code with gcc (because we have a function in c language (cell(x, y)))
