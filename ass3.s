@@ -1,4 +1,4 @@
-        global _start
+        global main
         extern init_co, start_co, resume
         extern scheduler, printer
 
@@ -12,7 +12,7 @@ section .data
 
 section .text
 
-_start:
+main:
         enter 0, 0
 
         xor ebx, ebx            ; scheduler is co-routine 0
